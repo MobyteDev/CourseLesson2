@@ -1,3 +1,4 @@
+import 'package:auth_test/info.dart';
 import 'package:auth_test/log_n_pas_screen.dart';
 import 'package:flutter/material.dart';
 import 'xylophone.dart';
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: Xylophone()//LogNPass(),
+      home: InfoPage(name: "User"),//LogNPass(),
     );
   }
 }
