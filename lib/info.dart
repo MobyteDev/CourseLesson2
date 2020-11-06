@@ -1,3 +1,4 @@
+import 'package:auth_test/xylophone.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -34,7 +35,7 @@ class InfoPage extends StatelessWidget {
           actions: [
             GestureDetector(
               onTap: () {
-                Navigator.pushNamed(context, '/xyl');
+                Navigator.of(context).push(MaterialPageRoute(builder: (context) => Xylophone()));
               },
               child: Icon(
                 Icons.music_note,
