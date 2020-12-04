@@ -9,10 +9,8 @@ void main() async {
 }
 
 class MyApp extends StatelessWidget {
-  void init() async => await Firebase.initializeApp();
   @override
   Widget build(BuildContext context) {
-    init();
     return MaterialApp(
       title: 'Lesson 2',
       theme: ThemeData(

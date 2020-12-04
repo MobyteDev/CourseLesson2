@@ -14,6 +14,8 @@ class Auth {
         throw AuthException("No such user!");
       } else if (e.code == 'wrong-password') {
         throw AuthException("Wong password!");
+      } else if (e.code == "invalid-email") {
+        throw AuthException("Bad format for email");
       }
     }
   }
@@ -29,6 +31,8 @@ class Auth {
       } else if (e.code == 'email-already-in-use') {
         print('The account already exists for that email.');
         throw AuthException('The account already exists for that email.');
+      } else if (e.code == "invalid-email") {
+        throw AuthException("Bad format for email");
       }
     } catch (e) {
       print(e);
